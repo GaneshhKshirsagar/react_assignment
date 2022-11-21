@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>ReactDom</title>
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <style>
+        ul{
+            padding: 20px;
+            padding-top: 10px;
+            border: solid black 1px;
+                height: 70px;
+                width: 230px;
+                background-color:aliceblue
+        }
+        ul>li{
+            color: darkblue;
+            font-size: large;           
+        }
+        li:first-child{
+                color:Orange;
+            }
+            li:nth-child(3n)
+            {
+                color: darkcyan;
+            }
+            #root{
+                margin: 20px;
+                
+            }
+            #btn{
+               color: brown;
+               border-radius: 5px;
+               cursor: pointer;
+            }
+    </style>
+    <body>
+        <h2>Personal Details </h2>
+        <div id="root"></div>
+        <button id="btn" value="Ganesh">Click here</button>
+    </body>
+    
+    <script type="text/babel">
+        const element=(
+            <ul>
+              <li >Name: Ganesh Kshirsagar</li>    
+              <li>Qualificaion: MCA</li>
+              <li>Native Place: Pandharpur</li>
+            </ul>
+        );
+ReactDOM.render(element,document.getElementById("root"))
+
+    </script>
+</html>
