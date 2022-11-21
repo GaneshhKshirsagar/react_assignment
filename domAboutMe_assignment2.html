@@ -1,0 +1,55 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title> About me</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"> </div>
+    <h2> About me</h2>
+    <ul>
+        <li>Name:</li>
+        <li>Qualificaion:</li>
+        <li>Native place:</li>
+    </ul>
+    <button id="btn">click here</button>
+    <script type="text/babel">
+  const element = document.getElementById("btn");
+  element.addEventListener("click",responce);
+  element.style.color="Blue";
+  function responce()
+  {
+   var value= document.getElementsByTagName("li");
+   value[0].innerHTML="Ganesh Kshirsagar";
+   value[0].style.color="Orange";
+   value[1].innerHTML= "MCA";
+   value[1].style.color="blue";
+   value[2].innerHTML="Pandharpur/Ozewadi";
+   value[2].style.color="Red";
+   ReactDom.render(value,document.getElementById("root"));
+  }
+    </script>
+  </body>
+</html> -->
+
+<html>
+  <head>
+    <title>About me</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <h3> My name is </h3>
+    <button id="btn">click</button>
+    <script>
+     const res=document.getElementById('btn');
+     res.addEventListener("click",myFun);
+     function myFun() {
+      const respo=document.getElementsByTagName('h3');
+      respo.innerHTML="Ganesh Kshirsagar";
+      ReactDOM.render('respo',document.getElementById('root'));
+     }
+    </script>
+  </body>
+</html>

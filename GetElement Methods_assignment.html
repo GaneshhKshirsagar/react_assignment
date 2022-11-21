@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title> getMethodProperty </title>
+
+<body>
+    <br>
+    <p id="name"> What is your name </p>
+    <button onclick="myName()"> Click me</button>
+    <br><br>
+    <div id="spanid">
+        <p> Welcome to </p>
+        <p><span> codeMind </span></p>
+        <p> Welcome to codemind techknology </p>
+    </div>
+    <button ondblclick="codeminFunction()">change</button>
+    <script>
+        function myName() {
+            document.getElementById("name").innerHTML = ("Ganesh Kshirsagar");
+            document.getElementById("name").style.fontSize = "30px";
+
+        }
+        function codeminFunction() {
+            const resp = document.getElementById("spanid");
+            resp.getElementsByTagName("p")[1].style.color = "Orange";
+            resp.getElementsByTagName("p")[0].style.fontSize = "20px";
+
+        }
+
+
+    </script>
+</body>
+</head>
+
+</html>
